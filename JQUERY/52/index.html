@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document 52</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+	<!--По нажатию на элемент #test найдите его ближайшего родителя с классом .www, 
+		внутри этого родителя найдите все абзацы и покрасьте их в красный цвет. -->
+	<p id="test">Нажать</p>
+	<div class="www">
+		<p>Tекст</p>
+		<p>Tекст</p>
+		<p>Tекст</p>
+	</div>	
+
+	<script type="text/javascript">
+		$('#test').click(function() {$(this).parentsUntil('.www').find('p').css('color', 'red');});
+	</script>
+</body>
+</html>

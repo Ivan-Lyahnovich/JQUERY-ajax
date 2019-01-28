@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document 29</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+	<!--По нажатию на абзац <p> удалите его пятого соседа снизу. -->
+	<p>Нажать</p>
+	<p>Текст 1</p>
+	<p>Текст 2</p>
+	<p>Текст 3</p>
+	<p>Текст 4</p>
+	<p>Текст 5</p>
+	<p>Текст 6</p>
+
+	<script type="text/javascript">
+		$('p').on('click', function() {
+        $(this).nextAll().eq(4).remove();
+    	});
+	</script>
+</body>
+</html>

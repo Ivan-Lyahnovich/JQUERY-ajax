@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document 51</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+	<!--Для элемента #test найдите ближайшего родителя с классом .www, в конец этого родителя добавьте абзац с текстом '!'. -->
+	
+	<p id="test">Tекст</p>
+	<div class="www">Tекст</div>
+
+	<script type="text/javascript">
+		$('#test').parentsUntil('.www').append('<p>!</p>');
+	</script>
+</body>
+</html>

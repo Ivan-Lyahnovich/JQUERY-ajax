@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document 24</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+	<!--Найдите все абзацы <p>, поставьте каждому из них в конец его порядковый номер в наборе.  -->
+	<p>Текст </p>
+	<a href="">Текст </a>
+	<p>Текст </p>
+	<a href="">Текст </a>
+	<p>Текст </p>
+
+	<script type="text/javascript">
+		$('p').append(function (index) {
+		return index;
+		});
+	</script>
+</body>
+</html>

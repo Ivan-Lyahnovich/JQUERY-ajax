@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document 38</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+	<!--Найдите все абзацы <p>, у которых непосредственный родитель не <div> и оберните каждый из них в <div class="www">. -->
+	<p>Tекст</p>
+	<div><p>Tекст</p></div>
+	<p>Tекст</p>
+	<div><p>Tекст</p></div>
+
+	<script type="text/javascript">
+		$('p').parent().not('div').children('p').wrap('<div class="www">');
+	</script>
+</body>
+</html>

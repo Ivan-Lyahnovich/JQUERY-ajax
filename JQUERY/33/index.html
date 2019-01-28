@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document 33</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+	<!--Дан элемент #test. Поменяйте этот элемент местами с его непосредственным соседом снизу. -->
+	<p id="test">Верхний текст</p>
+	<p>Нижний текст</p>
+
+	<script type="text/javascript">
+		var $elem = $('#test');
+		$elem.insertAfter($elem.next());
+	</script>
+</body>
+</html>

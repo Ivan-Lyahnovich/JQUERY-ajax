@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document 47</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+	<!--Получите все <li> с классом .www, сделайте им красный цвет, затем найдите среди найденных те <li>, 
+		у которых есть класс .bbb и удалите их. Решите все одной цепочкой. -->
+	<ol>
+		<li class="bbb">Текст 1</li>
+		<li class="www">Текст 2</li>
+		<li class="bbb">Текст 3</li>
+		<li class="www">Текст 4</li>
+	</ol>
+
+	<script type="text/javascript">
+		$('li.www').css('color', 'red').filter('.bbb').remove();
+	</script>
+</body>
+</html>

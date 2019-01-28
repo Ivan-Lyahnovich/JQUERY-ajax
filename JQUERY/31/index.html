@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document 31</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+	<!--По нажатию на абзац <p> удалите его пятого соседа снизу, если этот сосед не имеет внутри себя тега <b>. -->
+	<p>Нажать</p>
+	<p>Текст 1</p>
+	<p>Текст 2</p>
+	<p>Текст 3</p>
+	<p>Текст 4</p>
+	<h1>Текст h1</h1>
+	<h3>Текст h3</h3>
+	<h2><b>Текст h2 c тегом "b"</b></h2>
+	<h4>Текст h4</h4>
+
+	<script type="text/javascript">
+		$('p').on('click', function() {
+        $(this).nextAll().eq(4).not(':has(b)').remove();
+    	});
+	</script>
+</body>
+</html>

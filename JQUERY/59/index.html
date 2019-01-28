@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document 59</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+	<!--Дан инпуты. Переместите содержимое атрибута value в атрибут placeholder, а сам атрибут value удалите совсем. -->
+	<input type="text" placeholder="Введите имя" value="Текст">
+
+	<script type="text/javascript">
+		$('input').each(function() {
+		$elem = $(this);
+		$elem.attr('placeholder', $elem.val()).removeAttr('value');
+		});
+	</script>
+</body>
+</html>

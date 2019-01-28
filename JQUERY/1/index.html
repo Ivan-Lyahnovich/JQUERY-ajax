@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document 1</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	
+	<!--Все абзацы <p>, внутри которых есть <b>, оберните в тег <div>.-->
+	<p>Абзац с тегом <b>b</b>.</p>
+	<p>Абзац с тегом <b>b</b>.</p>
+
+	<script type="text/javascript">
+		$('p:has(b)').wrap('<div>');
+	</script>
+</body>
+</html>

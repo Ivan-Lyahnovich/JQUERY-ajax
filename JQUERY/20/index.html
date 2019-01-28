@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document 20</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+	<!--Дан элемент <div>. Выберите из него всех непосредственных потомков, 
+		которые не являются заголовками и покрасьте их в красный цвет.  -->
+	<div>
+		<h1><p class="www">Текст абзаца h1</p></h1>
+		<p>Текст</p>
+		<h2><p class="www">Текст абзаца h2</p></h2>
+		<p>Текст</p>
+		<h3><p class="www">Текст абзаца h3</p></h3>
+		<p>Текст</p>
+	</div>
+
+	<script type="text/javascript">
+		$('div > *:not(h1, h2, h3)').css('color', 'red');
+	</script>
+</body>
+</html>

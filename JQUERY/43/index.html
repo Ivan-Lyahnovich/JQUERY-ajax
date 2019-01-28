@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document 43</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+	<!--Найдите все <li> на странице, затем перед предпоследним из найденных вставьте еще один <li> с текстом 'пункт'. -->
+	<ol>
+		<li>Текст</li>
+		<li>Текст</li>
+		<li>Текст</li>
+		<li>Текст</li>
+	</ol>
+	
+	<script type="text/javascript">
+		$('li').last().prev().before('пункт');
+	</script>
+</body>
+</html>

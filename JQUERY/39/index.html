@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document 39</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+	<!--Найдите все абзацы <p>. Удалите их родителя (сделайте ему unwrap), если этот родитель не <div> с классом .www. 
+		Затем для те абзацы, у которых был удален родитель, оберните в <div> с классом .zzz. -->
+	<p>Tекст</p>
+	<div class="www"><p>Tекст</p></div>
+	<div class="xxx"><p>Tекст</p></div>
+	<div class="www"><p>Tекст</p></div>
+
+	<script type="text/javascript">
+		$(':not(div.www) > p').unwrap().wrap('<div class="zzz">');
+	</script>
+</body>
+</html>

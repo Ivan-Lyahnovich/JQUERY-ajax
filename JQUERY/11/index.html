@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document 11</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+	<!--Каждому абзацу <p>, кроме абзацев с классом .www, добавьте к конец его порядковый номер. -->
+	<p>Абзац </p>
+	<p>Абзац </p>
+	<p class="www">Абзац </p>	
+	<p>Абзац </p>	
+	<p>Абзац </p>	
+
+	<script type="text/javascript">
+		$('p:not(.www)').each(function (index) {
+		$(this).append(index);
+		});
+	</script>
+</body>
+</html>

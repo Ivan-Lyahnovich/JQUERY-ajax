@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document 60</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+	<!--Дана ссылка. Если атрибут href начинается на http://, добавьте ссылке атрибут target="_blank".  -->
+	<a href="http://phphtml.net" target="_blank">ссылка на phphtml.net</a>
+
+	<script type="text/javascript">
+		$("a[href^='http://']").attr('target', '_blank');
+	</script>
+</body>
+</html>

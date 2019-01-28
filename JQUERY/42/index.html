@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document 42</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+	<!--Найдите все абзацы <p> из #test, поставьте им в конец текст '!', 
+		затем исключите из найденных абзацы с классом .www и оставшимся поставьте красный цвет. -->
+	<div id="test">
+		<p>Tекст</p>
+		<p class="www">Tекст</p>
+		<p>Tекст</p>
+	</div>
+
+	<script type="text/javascript">
+		$('#test').children('p').append('!').not('.www').css('color', 'red');
+	</script>
+</body>
+</html>

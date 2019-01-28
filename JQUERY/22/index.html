@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document 22</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+	<!--Найдите все абзацы <p> с классом .www, покрасьте их в красный цвет. 
+		Затем выберите среди найденных абзацев первый и поставьте ему текст '!', 
+		затем выберите последний и ему поставьте текст '?'. Решите задачу одной цепочкой. -->
+	<p class="www">Текст</p>
+	<p>Текст</p>
+	<p class="www">Текст</p>
+	<p>Текст</p>
+	<p class="www">Текст</p>
+
+	<script type="text/javascript">
+		$('p.www').css('color', 'red').first().html('!').end().last().html('?');
+	</script>
+</body>
+</html>

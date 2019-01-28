@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document 49</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+	<!--Найдите все теги <div> и удвойте им высоту. -->
+	<div><p>Tекст</p></div>
+	<div><p>Tекст</p></div>
+	<div><p>Tекст</p></div>
+
+	<script type="text/javascript">
+		$('div').height(function (index, height) {
+		return height*2;
+		});
+	</script>
+</body>
+</html>

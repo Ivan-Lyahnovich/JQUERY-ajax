@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document 9</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+	<!--Найдите второй <li> на странице, добавьте ему класс .www, оберните его внутри тегом <i>, 
+		вставьте после него <li> с текстом 'привет'. -->
+	<li>Абзац.</li>
+	<li>Абзац.</li>
+	<li>Абзац.</li>
+	<li>Абзац.</li>
+
+	<script type="text/javascript">
+		$('li:eq(1)').addClass('.www').wrapInner('<i>').after('<li>привет</li>');
+	</script>
+</body>
+</html>

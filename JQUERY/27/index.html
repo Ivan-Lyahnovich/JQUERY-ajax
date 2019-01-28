@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document 27</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+	<!--По нажатию на абзац <p> удалите всех его соседей сверху до первого заголовка h1-h6 
+		(то есть элементы, стоящие выше этого заголовка и сам заголовок удалять не надо). -->
+	<p>Текст</p>
+	<h2>Заголовок</h2>	
+	<a>Текст</a><br><br>
+	<a>Текст</a><br><br>
+	<a>Текст</a><br><br>
+	<a>Текст</a>		
+	<p>Нажать</p>	
+
+	<script type="text/javascript">
+		$('p').on('click', function() {
+        $('p').prevUntil(':header').remove();
+    	});
+	</script>
+</body>
+</html>

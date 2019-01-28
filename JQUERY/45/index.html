@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document 45</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+	<!--Найдите <ol> с #test и переставьте все <li> в нем в обратном порядке. -->
+	<ol id="test">
+		<li>Текст 1</li>
+		<li>Текст 2</li>
+		<li>Текст 3</li>
+		<li>Текст 4</li>
+		<li>Текст 5</li>
+	</ol>
+
+	<script type="text/javascript">
+		var $ol = $('#test');
+		$ol.html( $ol.children().get().reverse() );
+	</script>
+</body>
+</html>

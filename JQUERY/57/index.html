@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document 57</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+	<!--Дано 5 чекбоксов. Сделайте так, чтобы после того, как пользователь отметил два из них, все чекбоксы заблокировались. -->
+	<input type="checkbox">
+	<input type="checkbox">
+	<input type="checkbox">
+	<input type="checkbox">
+	<input type="checkbox">
+
+	<script type="text/javascript">
+		var $checkboxes = $(':checkbox');
+			$checkboxes.on('click', function() {
+				if ($(':checkbox:checked').length == 2) {
+				$checkboxes.attr('disabled', 'true');
+			}
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document 3</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+	<!--Найдите все абзацы <p>, и замените их на тег <div> с таким же содержимым.-->
+	<p>Текст абзаца 1.</p>
+	<p>Текст абзаца 2.</p>
+	<p>Текст абзаца 3.</p>
+
+	<script type="text/javascript">
+		$('p').each(function() {
+			$(this).replaceWith('<div>' + $(this).html() + '</div>');
+		});
+	</script>
+</body>
+</html>

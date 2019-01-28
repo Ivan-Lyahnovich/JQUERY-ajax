@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document 15</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+	<!--Родителю тега <b>, если это элемент с классом .www или абзац <p>, поставьте красный цвет и размер текста в 30px.-->
+	<div class="www"><b>Текст</b></div>
+	<b>Текст без класса "www"</b>
+	<p><b>Текст</b></p>
+	<b>Текст вне абзаца</b>
+
+	<script type="text/javascript">
+		$('b').parent('.www, p').css({color: 'red', fontSize: '30px'});
+	</script>
+</body>
+</html>

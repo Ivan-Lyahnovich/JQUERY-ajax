@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document 21</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+	<!--Найдите все абзацы <p>, покрасьте их в красный цвет. 
+		Затем выберите среди найденных абзацев абзацы с классом .www и поставьте им текст '!'. -->
+	<p>Текст</p>
+	<h4>Текст</h4>
+	<p class="www">Текст</p>
+	<p>Текст</p>
+	<h3>Текст</h3>
+	<p class="www">Текст</p>
+
+	<script type="text/javascript">
+		$('p').css('color', 'red').filter('.www').html('!'); 
+	</script>
+</body>
+</html>

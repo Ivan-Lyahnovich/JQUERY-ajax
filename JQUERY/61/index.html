@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document 61</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+	<!--Дан инпут, в который можно ввести число. Сделайте так, чтобы при вводе числа в этот инпут и потери фокуса 
+		на странице искался чекбокс с таким номером и становился отмеченным, а остальные чекбоксы становились неотмеченными. -->
+	<input id="inp" type="text" placeholder="Введите число" value=""><br><br>
+	<input type="checkbox">0<br>
+	<input type="checkbox">1<br>
+	<input type="checkbox">2<br>
+	<input type="checkbox">3<br>
+	<input type="checkbox">4<br>
+	<input type="checkbox">5
+
+	<script type="text/javascript">
+		$('#inp').blur(function () { 
+		$('input:checkbox').prop('checked', false).eq($(this).val()).prop('checked', true); 
+		}); 
+	</script>
+</body>
+</html>

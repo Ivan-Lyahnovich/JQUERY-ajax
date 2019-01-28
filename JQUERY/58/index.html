@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document 58</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+	<!--Сделайте так, чтобы все отмеченные чекбоксы сменили свое состояние на неотмеченное и наоборот. -->
+	<input type="checkbox">
+	<input type="checkbox" checked>
+	<input type="checkbox">
+	<input type="checkbox" checked>
+	<input type="checkbox">
+
+	<script type="text/javascript">
+		$(':checkbox').each(function (index, elem) {
+		elem.checked = !elem.checked;
+		});
+	</script>
+</body>
+</html>

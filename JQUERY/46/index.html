@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document 46</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+	<!--Дан элемент #text. Найдите всех его соседей сверху и всех его соседей снизу и поменяйте их местами 
+		(то есть все, что стоит до элемента, должно стать после него и наоборот). -->
+	<p>Tекст 1</p>
+	<p>Tекст 2</p>
+	<p id="text">Tекст</p>
+	<p>Tекст 3</p>
+	<p>Tекст 4</p>
+
+	<script type="text/javascript">
+		$text = $('#text');
+		$prev = $text.prevAll().get().reverse();
+		$next = $text.nextAll();
+		$text.after($prev).before($next);
+	</script>
+</body>
+</html>

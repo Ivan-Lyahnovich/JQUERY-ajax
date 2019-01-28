@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document 13</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+	<!--Найдите абзацы <p>, которые стоят непосредственно под <h2> и переместите каждый абзац так, 
+		чтобы он стал непосредственно над <h2> -->
+	<h2>Текст</h2>
+	<p>Абзац</p>
+	<h2>Текст</h2>
+	<p>Абзац</p>
+	<h2>Текст</h2>
+	<p>Абзац</p>
+	
+	<script type="text/javascript">
+		$('h2 + p').prev().before(function() {
+		return $(this).next();
+		});
+	</script>
+</body>
+</html>

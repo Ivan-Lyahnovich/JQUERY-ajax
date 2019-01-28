@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document 26</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+	<!--По нажатию на абзац <p> удалите его непосредственных соседей сверху и с низу. -->
+	<p>Текст 1</p>
+	<p>Текст 2</p>
+	<p>Текст 3</p>
+
+	<script type="text/javascript">
+		$('p').on('click', function() {
+        $(this).prev().remove().end().next().remove();
+    	});
+	</script>
+</body>
+</html>

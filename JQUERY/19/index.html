@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document 19</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+	<!--Дан элемент #test. Найдите его второго соседа сверху и его второго соседа снизу. 
+		Сделайте так, чтобы найденные элементы обменялись текстом (сосед сверху возьмет текст соседа снизу и наоборот). -->
+	<p>Верхний текст</p>
+	<p>Текст</p>
+	<p id="test">Текст</p>
+	<p>Текст</p>
+	<p>Нижний текст</p>
+
+	<script type="text/javascript">
+		var $id = $('#test');
+		var $next = $id.nextAll().eq(1);
+		var $prev = $id.prevAll().eq(1);
+		var nextText = $next.html();
+		var prevText = $prev.html();
+		$next.html(prevText);
+		$prev.html(nextText);
+	</script>
+</body>
+</html>

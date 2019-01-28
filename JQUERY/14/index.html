@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document 14</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+	<!--Найдите все пустые абзацы <p> (без текста) и вставьте в них текст непосредственного соседа сверху. -->
+	<p>Текст 1</p>
+	<p></p>
+	<p></p>
+	<p>Текст 2</p>
+	<p></p>
+	<p></p>
+	
+
+	<script type="text/javascript">
+		$('p:empty').each(function() {
+		var $elem = $(this);
+		var text = $elem.prev().html();
+		$elem.html(text);
+		});
+	</script>
+</body>
+</html>

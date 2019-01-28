@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document 17</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+	<!--Даны инпуты с числами. Сделайте так, чтобы в инпутах стали квадраты этих чисел. -->
+	<input type="text" value="2">
+	<input type="text" value="7">
+	<input type="text" value="14">
+
+
+	<script type="text/javascript">
+		$('input').val(function (index, value) {
+		return value * value;
+		});
+	</script>
+</body>
+</html>

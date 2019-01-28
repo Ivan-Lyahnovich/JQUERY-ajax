@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document 36</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+	<!--Найдите все абзацы <p>, которые внутри одного родителя лежат между одним и другим <h2>. -->
+	<p>Tекст</p>
+	<h2>Tекст</h2>
+	<p>Tекст</p>
+	<p>Tекст</p>
+	<h2>Tекст</h2>
+
+	<script type="text/javascript">
+		$('h2').nextUntil('h2').next().prevUntil('h2').filter('p').css('color', 'red');
+	</script>
+</body>
+</html>

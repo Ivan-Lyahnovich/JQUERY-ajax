@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document 6</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+	<!--Дан элемент #test. Поставьте его непосредственному соседу сверху текст '!', 
+		а соседу снизу - текст '?'. Решите задачу одной цепочкой.-->
+	<p>Абзац.</p>
+	<p>Абзац.</p>
+	<p id="test">Абзац.</p>
+	<p>Абзац.</p>
+	<p>Абзац.</p>
+
+	<script type="text/javascript">
+		$('#test').prev().html('!').end().next().html('?');
+	</script>
+</body>
+</html>

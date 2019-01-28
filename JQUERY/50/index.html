@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document 50</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+	<!--Найдите сумму высот всех <div> на странице. -->
+	<div><p>Tекст</p></div>
+	<div><p>Tекст</p></div>
+	<div><p>Tекст</p></div>
+
+	<script type="text/javascript">
+		var sum = 0;
+		$('div').height(function (index, value) {
+		sum +=value;
+		});
+
+		console.log(sum);
+	</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document 7</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+	<!--Дан элемент #test. Поставьте его непосредственным соседям сверху и снизу текст элемента #test.-->
+	<p>Абзац.</p>
+	<p>Абзац.</p>
+	<p id="test">Текст</p>
+	<p>Абзац.</p>
+	<p>Абзац.</p>	
+
+	<script type="text/javascript">
+		var $elem = $('#test'); 
+		$elem.prev().html($elem.html()).next().next().html($elem.html()); 
+	</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document 35</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+	<!--Дан элемент #test. Поменяйте этот элемент местами с его ближайшим соседом снизу с классом .www. -->
+	<p id="test">Tекст c элемент #test</p>
+	<p>Tекст</p>
+	<p>Tекст</p>
+	<p class="www">Tекст с классом .www.</p>
+	<p>Tекст</p>
+
+	<script type="text/javascript">
+		var $elem = $('#test');
+		var $neighbor = $elem.nextAll('.www').first(); //neighbor - это сосед
+		$elem.clone().insertAfter($neighbor);
+		$neighbor.insertAfter($elem);
+		$elem.remove();
+	</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document 16</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+	<!--Всем пустым абзацам <p> поставьте текст ближайшего к ним сверху тега <h2>. -->
+	<h2>Текст h2</h2>
+	<p></p>
+	<h5>Текст h5</h5>
+	<p></p>
+	<h3>Текст h1</h3>
+	<p></p>
+
+	<script type="text/javascript">
+		$('p:empty').html(function() {
+		return $(this).prevAll('h2').html();
+		});	
+	</script>
+</body>
+</html>

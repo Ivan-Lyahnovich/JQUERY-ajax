@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document 40</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+	<!--Найдите всех родителей элемента #test и создайте массив из CSS классов этих родителей. -->
+	<div>
+  		<p id="test">Текст</p>
+  		<p>Текст</p>
+	</div>
+	
+	<script type="text/javascript">
+		var arr = [];
+		$('#test').parents().each( function() {
+		var classes = $(this).attr('class');
+			if (classes) {
+			arr = arr.concat(classes.split(' '));
+			}
+		});
+
+		console.log(arr);
+	</script>
+</body>
+</html>

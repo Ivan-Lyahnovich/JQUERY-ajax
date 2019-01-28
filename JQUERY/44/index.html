@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document 44</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+	<!--Найдите все <li> на странице, затем выберите среди найденных второй, 
+		третий и четвертый с конца и поставьте им текст '!'.  -->
+	<ol>
+		<li>Текст 1</li>
+		<li>Текст 2</li>
+		<li>Текст 3</li>
+		<li>Текст 4</li>
+		<li>Текст 5</li>
+	</ol>
+
+	<script type="text/javascript">
+		$('li').slice(-4, -1).html('!');
+	</script>
+</body>
+</html>

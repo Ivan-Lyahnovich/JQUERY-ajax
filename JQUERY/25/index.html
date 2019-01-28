@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document 25</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+	<!--Даны абзацы с числами. Поставьте каждому из них в конец число, 
+		которое в нем хранится, умноженное на его порядковый номер в наборе. -->
+	<p>5 </p>
+	<p>9 </p>
+	<p>12 </p>
+
+	<script type="text/javascript">
+		$('p').append(function (index, text) {
+		return index * text;
+		})
+	</script>
+</body>
+</html>
